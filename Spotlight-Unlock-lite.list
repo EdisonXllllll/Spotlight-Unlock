@@ -1,2 +1,2 @@
 DOMAIN, api.smoot.apple.com
-DOMAIN-KEYWORD,ls.apple.com
+AND,((USER-AGENT,com.apple.geod*), (DOMAIN-KEYWORD,ls.apple.com))
