@@ -1,4 +1,7 @@
 # Spotlight-Unlock
+# Spotlight解锁
+
+解锁国区Spotlight少了的功能
 
 使用方法：
 
