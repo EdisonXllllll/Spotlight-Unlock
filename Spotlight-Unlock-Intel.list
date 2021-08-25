@@ -1,2 +1,2 @@
-DOMAIN-KEYWORD, smoot.apple.com
+DOMAIN-SUFFIX, smoot.apple.com
 AND,((PROCESS-NAME,*com.apple.geod*), (DOMAIN-KEYWORD,ls.apple.com))
