@@ -1,7 +1,8 @@
 /*
 README:https://github.com/VirgilClyne/iRingo
 */
-var defaultCC = HK;
+// replace default country code
+var defaultCC = 'HK';
 if (typeof $inputDefaultCC != "undefined") {
     defaultCC = $inputDefaultCC;
 };
