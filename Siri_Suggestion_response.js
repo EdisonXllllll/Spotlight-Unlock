@@ -11,7 +11,7 @@ if ($response.status == 200) {
 	for (var i=0;i<result.length;i++)
 	{ 
 	    if(result[i].section_key == 'suggestion'){
-	    	result[i].replacement = 'tophit'
+	    	result[i].placement = 'tophit'
 	    }
 	}
 
