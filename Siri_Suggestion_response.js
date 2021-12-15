@@ -8,15 +8,19 @@ if ($response.status == 200) {
 	let res = JSON.parse($response.body)[0];
 	let result = res.results;
 
-	result.sort(function(a,b){
-		return keyListMap.get(b.section_key) - keyListMap.get(a.section_key);
-	})
+	for (var i=0;i<result.length;i++)
+	{ 
+	    if(result[i].section_key == 'suggestion'){
+	    	result[i].score = 10
+	    }
+	}
+
 
 	res.results = result;
 
 	org[0] = res
 
-	console.log(JSON.stringify(org));
+	console.log(org);
 
 	$done({body:JSON.stringify(org)});
 }
