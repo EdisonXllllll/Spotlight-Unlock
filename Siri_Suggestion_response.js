@@ -4,7 +4,6 @@ keyListMap.set('suggestion',90);
 keyListMap.set('web',80);
 
 if ($response.status == 200) {
-	console.log($response.body);
 	let org = JSON.parse($response.body);
 	let res = JSON.parse($response.body)[0];
 	let result = res.results;
@@ -16,6 +15,8 @@ if ($response.status == 200) {
 	res.results = result;
 
 	org[0] = res
+
+	console.log(JSON.stringify(org));
 
 	$done({body:JSON.stringify(org)});
 }
