@@ -11,8 +11,7 @@ if ($response.status == 200) {
 	for (var i=0;i<result.length;i++)
 	{ 
 	    if(result[i].section_key == 'suggestion'){
-	    	result[i].placement = 'tophit';
-                result[i].tophit = 1;
+	    	result[i].prefer_top_platter = true;
 	    }
 	}
 
